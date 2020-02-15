@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1 {
+  color: whitesmoke;
+}
+    
+body {
+    background-image: url(images/b.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+    
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+    
+form {
+     width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+    
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style> 
+</head>
+<body>
+
+<center><h1> Hotel Booking Form</h1></center>
+
+<div class="container">
+  <form action="/action_page.php">
+    <p><label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname"></p>
+
+    <p><label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname"></p>
+
+    <p><label for="country">Your Country</label>
+    <select id="country" name="country">
+     <option value="-1">Select..</option>
+      <option value="India">INDIA</option>
+      <option value="USA">U.S</option>
+      <option value="Indonesia">INDONESIA</option>
+      <option value="Brazil">BRAZIL</option>
+      <option value="Nigeria">NIGERIA</option>
+      <option value="Russia">RUSSIA</option>
+      <option value="Mexica">MEXICO</option>
+      <option value="Japan">JAPAN</option>
+      <option value="Germany">GERMANY</option>
+      <option value="UK">U.K</option>
+      <option value="Colombia">COLOMBIA</option>
+    </select><p>
+    
+     <label>Tour Packages: </label>
+            <select name="City">
+            <option value="-1">Select..</option>
+            <option value="amritsar">AMRITSAR</option>
+            <option value="manali">MANALI</option>
+            <option value="kasol">KASOL</option>
+            <option value="ladakh">LADAKH</option>
+            <option value="rishikesh">RISHIKESH</option>
+            <option value="varanasi">VARANASI</option>
+            <option value="jaisalmer">JAISALMER</option>
+            </select>
+        
+         <p><b>Date: </b>
+            <input name="date-time" type="datetime-local" required>
+        </p>
+        
+        <p><b>No. Of Persons: </b>
+            <select name="no of persons">
+            <option value="-1">Select..</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            </select>
+        </p>
+        
+        <p>
+             <fieldset>
+            <legend><h4>What would you like to avail?</h4></legend>
+            <p><label> <input type="radio" name="boarding"> Boarding </label></p>
+            <p><label> <input type="radio" name="Fooding"> Fooding </label></p>
+            <p><label> <input type="radio" name="Sight Seeing"> Sight Seeing </label></p>
+            <p><label> <input type="radio" name="treking"> Treking </label></p>
+            <p><label> <input type="radio" name="rafting"> Rafting </label></p>
+        </fieldset>
+        
+        <p><b>Discount Coupon</b>:
+            <input name="coupon" type="text" placeholder="Enter Coupon Code">
+        </p>
+        
+        <p><b>Terms & Conditions:</b>
+            <input name="t&c" type="radio" name="t&c" value="I Agree"> I Agree
+            <input name="t&c" type="radio" name="t&c" value="I Disagree"> I Disagree
+            
+        </p>
+        
+    <p><label for="subject">Additional Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:70px"></textarea><p>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
